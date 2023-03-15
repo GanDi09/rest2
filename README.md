@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/ok5t6ryaa1bg1yy9?svg=true)](https://ci.appveyor.com/project/GanDi09/aqa-rest)
+[![Build status](https://ci.appveyor.com/api/projects/status/kycx4r9c9tp9cxla?svg=true)](https://ci.appveyor.com/project/GanDi09/rest2)
