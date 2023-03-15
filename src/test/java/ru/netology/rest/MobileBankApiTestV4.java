@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasSize;
 
 class MobileBankApiTestV4 {
     @Test
@@ -18,6 +19,7 @@ class MobileBankApiTestV4 {
 
                 .then()
                 .statusCode(200)
+                .body("", hasSize(3))
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
                 .header("Content-Type", "application/json; charset=UTF-8")
 
