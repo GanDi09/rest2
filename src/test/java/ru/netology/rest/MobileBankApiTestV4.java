@@ -19,7 +19,7 @@ class MobileBankApiTestV4 {
 
                 .then()
                 .statusCode(200)
-                .body("", hasSize(3))
+                .body("", hasSize(2))
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
                 .header("Content-Type", "application/json; charset=UTF-8")
 
